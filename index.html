@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh là Khánh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="info">
+        <div class="avata">
+            <img src="./all/avt.jpg" alt="Avatar">
+        </div>
+    </div>
+    <div class="name">
+        <h1>Anh là Khánh
+            <span>
+                <img src="./all/tick.png" class="legit">
+            </span>
+        </h1>
+    </div>
+    <div class="aboutme">
+        <h2>9/4/2011. Phạm Duy Khánh. I dont have skill</h2>
+        <h2>Lua:40%</h2>
+    </div>
+    <div class="bar">
+        <div class="box">
+        </div>
+    </div>
+    <div id="link">
+        <div class="facebook">
+            <a href="https://www.facebook.com/profile.php?id=100080127982389">
+                <span class="fbbtn">
+                    <img src="./all/facebook.png" alt="icon">
+                </span>
+            </a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/hoangnorpscripter">
+                <span class="ghbtn">
+                    <img src="./all/github.png" alt="icon">
+                </span>
+            </a>
+        </div>
+        <div class="tiktok">
+            <a href="https://www.tiktok.com/@k942011">
+                <span class="ttbtn">
+                    <img src="./all/tiktok.png" alt="icon">
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="clock">
+        <div id="time">Loading</div>
+    </div>
+    <p>@CopyRight 2024. The Web designed by Khanhdeptrai legit nhat Vi en</p>
+</body>
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        document.getElementById('time').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</html>
